@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+     android:paddingTop="@dimen/_32sdp"
+    android:background="@color/off_white"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_64sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:contentPadding="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="To:"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvToPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="9799990168"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:contentPadding="@dimen/_8sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Message"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:hint="Write your message"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:textColor="@color/secondary_text"
+                    app:met_clearButton="true"
+                    android:maxLines="2"
+                    android:maxLength="159"
+                    app:met_maxCharacters="160"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="Hi. Your OTP is: 12345"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelTextColor="@color/secondary_text"
+                    app:met_textColorHint="@color/secondary_text"
+                    app:met_underlineColor="@color/primary_dark" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/btnSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/shape_login_button"
+            android:text="Send Message"
+            android:textColor="@color/white" />
+
+
+</LinearLayout>

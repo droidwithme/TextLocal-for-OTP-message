@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Text Loal SMS</string>
+    <string name="title_home">Home</string>
+    <string name="title_send_msg">Send Message</string>
+    <string name="title_contact_info">Contact Details</string>
+    <string name="home_title">TEXTLOCAL API</string>
+    <string name="title_my_contacts">My Contacts</string>
+
+
+</resources>
